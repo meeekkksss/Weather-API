@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* base font-size + family  */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Centering header content */
+header {
+  text-align: center;
+  padding: 35px;
+  background-color: #f2f2f2;
+}
+
+/* styling the search-form */
+#search-form{
+  margin-top: 20px;
+}
+
+#city-input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 5px;
+}
+
+/* styling the search button */
+#search-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+
+}
+/* Main content container */
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/* Current weather section */
+#current-weather {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+#current-weather h2 {
+  margin-bottom: 10px;
+}
+
+#current-weather div {
+  margin-bottom: 5px;
+}
+
+/* Forecast section */
+#forecast {
+  flex: 2;
+  padding: 20px;
+}
+
+#forecast h2 {
+  margin-bottom: 10px;
+}
+
+/* Search history section */
+#search-history {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+#search-history h2 {
+  margin-bottom: 10px;
+}
+
+#history-list {
+  list-style: none;
+  padding: 0;
+}
+
+#history-list li {
+  margin-bottom: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  #search-history {
+    margin-top: 20px;
+  }
+}
+
+/* Additional styles for icons (You may use appropriate icon library or images) */
+#weather-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
