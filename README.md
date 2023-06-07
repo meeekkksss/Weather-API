@@ -25,7 +25,7 @@ THEN I am again presented with current and future conditions for that city.
 
 ## Installation
 
-Use to install  [jquery](https://pip.pypa.io/en/stable/) to install foobar.
+Use to install  [jquery](https://releases.jquery.com/) to install foobar.
 
 ```bash
 
