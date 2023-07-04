@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght:200;400;600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,8 +6,13 @@
 }
 /* base font-size + family  */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
   background-image: url("https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYXRoZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60");
   background-size: cover;
   background-position: center;
@@ -26,9 +32,23 @@ header {
 }
 
 #city-input {
-  padding: 10px;
-  width: 200px;
+  padding: 1rem;
+  min-width: 300px;
+  border-radius: 25px;
+  border: none;
+  background-color: white;
+  font-family: inherit;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
   margin-right: 5px;
+}
+#city-input:focus {
+  outline: none; 
+}
+
+section#current-weather {
+  text-align: center; 
+  font-size: 2rem;
 }
 
 /* styling the search button */

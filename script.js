@@ -1,4 +1,14 @@
-const API_KEY = "bb5961103d7b3a8606d4e530aa7e36b2";
+cont timeEl = document.getElementById("time");
+const dateEl = document.getElementById("date");
+const currentWeatherItemsEl = document.getElementById("current-weather-items");
+const timezone = document.getElementById("time-zone");
+const countryEl = document.getElementById("country");
+const weatherForecastEl = document.getElementById("weather-forecast");
+const currentTempEl = document.getElementById("current-temp");
+
+
+
+const API_KEY = "739c5afbff071becec50bda042e29cbe";
 
 // function that will fetch weather data from the API 
 function fetchWeatherData(city) {
@@ -7,6 +17,7 @@ function fetchWeatherData(city) {
     city +
     "&appid=" +
     API_KEY;
+
 
   // temp functio fetching api
   fetch("https://openweathermap.org/")
@@ -19,7 +30,9 @@ function fetchWeatherData(city) {
     .then(function (data) {
       // Process the retrieved data
       console.log(data);
-      // Call other functions to update the UI with the data
+    //  updates the UI with weather data
+    document.getElementById("city-name").textContent = data.name;
+    document.getElementById("date").textContent = new Date().toLocaleDateString();
     })
     .catch(function (error) {
       console.error("Error:", error);
